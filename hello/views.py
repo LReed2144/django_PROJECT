@@ -6,5 +6,8 @@ from django.shortcuts import render
 
 #in order to create a view in django we must define a function
 def index(request):
-    return HttpResponse('Hello, World!')
+    return HttpResponse('Hello!')
 
+#create a new view but must associate it with the urls.py
+def lyndsey(request):
+    return HttpResponse("Hello, Lyndsey") 
