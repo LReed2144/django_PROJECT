@@ -1,3 +1,6 @@
 h1 {
-    text-align: center
+    text-align: center;
+    padding: 25%;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
 }
