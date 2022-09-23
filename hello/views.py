@@ -16,4 +16,4 @@ def lyndsey(request):
 #standardize the urls so that it can be anyones name
 
 def greet(request, name):
-    return HttpResponse(f"Hello, {name}")
+    return HttpResponse(f"Hello, {name.capitalize()}")
