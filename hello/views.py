@@ -11,3 +11,9 @@ def index(request):
 #create a new view but must associate it with the urls.py
 def lyndsey(request):
     return HttpResponse("Hello, Lyndsey") 
+
+
+#standardize the urls so that it can be anyones name
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}")
