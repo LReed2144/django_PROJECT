@@ -4,6 +4,10 @@
         <title>Is it New Year's?</title>
     </head>
     <body>
-        <h1>Hello, World!</h1>
+        {% if newyear %}
+            <h1>Yes</h1>
+        {% else %}
+            <h1>No</h1>
+        {% endif %}
     </body>
 </html>
