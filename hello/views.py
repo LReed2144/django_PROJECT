@@ -9,7 +9,7 @@ from django.shortcuts import render
 
 #to use an html template instead of writing in all the structure into the function
 def index(request):
-    return render (request, "hello/index.html")
+    return render(request, "hello/index.html")
 
 #create a new view but must associate it with the urls.py
 def lyndsey(request):
@@ -17,6 +17,9 @@ def lyndsey(request):
 
 
 #standardize the urls so that it can be anyones name
-
+#this is for the template as well
 def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}")
+    return render(request, "hello/greet.html", {
+    #this is a dictionary
+        "name": name.capitalize()
+    })
