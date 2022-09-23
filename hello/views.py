@@ -5,8 +5,11 @@ from django.shortcuts import render
 # Create your views here.
 
 #in order to create a view in django we must define a function
+
+
+#to use an html template instead of writing in all the structure into the function
 def index(request):
-    return HttpResponse('Hello!')
+    return render (request, "hello/index.html")
 
 #create a new view but must associate it with the urls.py
 def lyndsey(request):
