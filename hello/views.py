@@ -9,7 +9,7 @@ from django.shortcuts import render
 
 #to use an html template instead of writing in all the structure into the function
 def index(request):
-    return render(request, "hello/index.html")
+    return render(request, " hello/index.html")
 
 #create a new view but must associate it with the urls.py
 def lyndsey(request):
